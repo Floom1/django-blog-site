@@ -1,0 +1,8 @@
+.env
+db.sqlite3
+accounts/__pycache__/
+accounts/migrations/
+blog/__pycache__/
+blog/migrations/
+blog/templatetags/__pycache__/
+mysite/__pycache__/
