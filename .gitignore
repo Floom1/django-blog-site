@@ -6,3 +6,5 @@ blog/__pycache__/
 blog/migrations/
 blog/templatetags/__pycache__/
 mysite/__pycache__/
+blog_api/__pycache__/
+blog_api/migrations/
