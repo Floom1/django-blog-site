@@ -12,9 +12,10 @@
             </div>
         </div>
     {% endif %}
-    <a href="{% url 'signup' %}" class="btn btn-link btn-lg active btn-block">SignUp</a>
-    <a href="{% url 'social:begin' 'github' %}" class="btn btn-link btn-lg active btn-block">Log In with GitHub</a>
-    <a href="{% url 'social:begin' 'google-oauth2' %}" class="btn btn-link btn-lg active btn-block">Log In with Google</a>
+    <a href="{% url 'signup' %}" class="btn btn-outline-primary btn-sm btn-block">SignUp</a>
+    <a href="{% url 'social:begin' 'github' %}" class="btn btn-outline-primary btn-sm btn-block">Log In with GitHub</a>
+    <a href="{% url 'social:begin' 'google-oauth2' %}" class="btn btn-outline-primary btn-sm btn-block">Log In with Google</a>
+    <br>
     <form method="post" class="form">
         {{ form.username }}
         {{ form.password }}
@@ -22,5 +23,5 @@
         {% csrf_token %}
         <input type="submit" class="btn btn-primary btn-lg" value="Login">
     </form>
-    <a href="{% url 'password_reset' %}">Reset Password</a>
+    <a href="{% url 'password_reset' %}" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Reset Password</a>
 {% endblock %}

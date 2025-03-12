@@ -12,7 +12,7 @@
 
     {% for post in posts %}
         <h2 class="fw-bolder" >
-            <a href="{{ post.get_absolute_url }}"> {{ post.title }}</a>
+            <a href="{{ post.get_absolute_url }}" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"> {{ post.title }}</a>
         </h2>
         {% if post.tags.all %}
             Tags:
